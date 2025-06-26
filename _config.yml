@@ -1,0 +1,48 @@
+# Site settings
+title: Alan의 블로그
+email: alan@example.com
+description: >-
+  개발자이자 창작자로서 기술과 디자인의 아름다운 조화를 추구합니다.
+  웹 개발과 사용자 경험에 대한 이야기를 나눕니다.
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Alan"
+
+# Social media usernames (for contact)
+github_username: alan
+linkedin_username: alan
+twitter_username: alan 
